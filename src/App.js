@@ -12,8 +12,8 @@ function App() {
   const [location, setLocation] = useState('');
   
 // API URL with location query parameter
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=4fa0a44e607031d77ee5a5edaf5c3897`
-  const apiKey = '4fa0a44e607031d77ee5a5edaf5c3897'
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=YOURAPIKEY`
+  const apiKey = 'YOURAPIKEY'
 // Fetch weather data on page load based on user's location  
   useEffect(() => {
     if (navigator.geolocation) {
