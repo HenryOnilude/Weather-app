@@ -1,13 +1,174 @@
+/* Box sizing and removing default spacing*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0; 
+}
+/* Body styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
-
+/* Body styles */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p {
+  font-size: 1.8rem;
+}
+/* Header styles */
+.header {
+  text-align: center;
+  margin-top: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  transition: all 0.3s;
+  
+}
+
+/* Header title styles */
+.header h1{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem; 
+  font-family: 'Roboto', sans-serif;
+ 
+}
+
+/* Header paragraph styles */
+.header p{
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+/* Main app container */
+.app {
+  color: white; 
+}
+/* Adds background image */
+.app:before {
+  background: url('./assets/weatherpicture.jpg') no-repeat center center/cover;
+}
+/*Inner content container */
+.container {
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+   justify-content: space-between;
+   overflow: auto;
+}
+/* Top section styles */
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+/* Description styles */
+.app .description {
+  position: relative;
+  right: -80%;
+  transform-origin: 0 0;
+  transform: rotate(270deg); 
+}
+
+.app .bottom {
+  display: flex; 
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 2rem;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.25); 
+}
+
+/* Hover effect on bottom section */
+.app .bottom:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+}
+/* Search bar styles */
+.app .search{
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Search input styles */
+.app input{
+  padding: .6rem 1.5rem;
+  font: size 1.2em;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+/* Bold text styles */
+.bold {
+  font-weight: 700;
+}
+/* Positions bottom section */ 
+.bottom {
+  position: relative;
+  top: -100px;
+}
+/* Background image on body */
+body, 
+html {
+  background: url('./assets/weatherpicture.jpg') no-repeat center center/cover;
+}
+
+.search {
+  position: relative; 
+}
+/* Search input padding */
+.input {
+  padding-left: 35px;
+}
+/* Search icon styles */
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;  
+  transform: translateY(-50%);
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+  border-radius: 50%;
+  animation: bounce 1s infinite;
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+/* Adds search icon */
+.search::before {
+  content: url('SearchIcon.jsx');
+} 
+/* Animation keyframes */  
+@keyframes bounce {
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+}
+
+/* Positions icon inside search input */
+.input span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
