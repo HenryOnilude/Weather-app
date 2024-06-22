@@ -74,11 +74,9 @@ Each video provides an immersive experience that complements the weather data di
 
 # What I Learned
 
-- React component architecture and state management
-- Working with external APIs
-- Dynamic UI updates based on data
-- Implementing video backgrounds in React
-- CSS animations and responsive design
+- Working with the OpenWeatherMap API
+- Creating a weather-based user interface with real-time data updates
+- Implementing dynamic video backgrounds based on weather conditions
 
 # Usage
 - Enter a city name in the search bar
