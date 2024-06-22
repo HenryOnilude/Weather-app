@@ -1,74 +1,94 @@
-<<<<<<< HEAD
-# Weather-app
-=======
-# Getting Started with Create React App
+# Weather App with Dynamic Video Backgrounds
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based weather application that displays real-time weather information with immersive video backgrounds that change based on current conditions.
 
-## Available Scripts
+# Features
 
-In the project directory, you can run:
+- Real-time weather data fetched from OpenWeatherMap API
+- Dynamic video backgrounds for various weather conditions
+- City-based weather search functionality
+- Display of key weather metrics (temperature, humidity, wind speed, etc.)
+- Responsive and intuitive user interface
 
-### `npm start`
+# Demo Videos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Cloudy day in London:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://github.com/HenryOnilude/Weather-app/assets/111580327/2346e3dd-53b9-43b6-b66b-5eb67e168276
 
-### `npm test`
+Raining in Manchester: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://github.com/HenryOnilude/Weather-app/assets/111580327/2324d63d-e498-406b-82b7-ff9268a71a40
 
-### `npm run build`
+Clear day in Brazil: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://github.com/HenryOnilude/Weather-app/assets/111580327/07930c36-0a68-454b-90d2-180283735759
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Hazing day in New Delhi:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://github.com/HenryOnilude/Weather-app/assets/111580327/751136cb-69fc-4770-ae5f-98302556c202
 
-### `npm run eject`
+Thunderstorm day in Barranquilla: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+https://github.com/HenryOnilude/Weather-app/assets/111580327/f5290f80-c9f1-42d5-981b-8925a9531fc2
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Misty day in Cape Town: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+https://github.com/HenryOnilude/Weather-app/assets/111580327/1a60dc8d-5780-47c5-9814-91d616156447
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Foggy day in Montevideo:
 
-## Learn More
+https://github.com/HenryOnilude/Weather-app/assets/111580327/d5d0f137-20c1-4166-81d0-c457d48cb771
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Video Backgrounds
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app features the following video backgrounds to match different weather conditions:
 
-### Code Splitting
+- Clear
+- Raining
+- Cloudy
+- Sunny
+- Mist
+- Snow
+- Thunderstorm
+- Dust
+- Snow
+- Haze
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Each video provides an immersive experience that complements the weather data displayed.
 
-### Analyzing the Bundle Size
+# Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- React: Frontend library for building the user interface
+- CSS: For styling and animations
+- OpenWeatherMap API: For fetching real-time weather data
+- HTML5 Video: Used within custom React components for dynamic video backgrounds
 
-### Making a Progressive Web App
+# Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Add multi-day forecast functionality
+- Implement temperature unit conversion (Celsius)
+- Improve accessibility features
+- Add more detailed weather information and data visualization
+- Implement geolocation for automatic local weather display
 
-### Advanced Configuration
+# What I Learned
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- React component architecture and state management
+- Working with external APIs
+- Dynamic UI updates based on data
+- Implementing video backgrounds in React
+- CSS animations and responsive design
 
-### Deployment
+# Usage
+- Enter a city name in the search bar
+- View the current weather information and enjoy the matching video background
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Running Client Locally
 
-### `npm run build` fails to minify
+1. `npm install` To install dependencies 
+2. `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 50c4eb5 (Initialize project using Create React App)
+# API Key Setup
+1. Sign up for a free account at OpenWeatherMap:https://openweathermap.org/
+2. Obtain your API key
